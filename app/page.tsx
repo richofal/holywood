@@ -1,13 +1,12 @@
 import About from "./components/About";
+import Card from "./components/Card/Card";
 import Homepage from "./components/Homepage";
 
 export default function Home() {
   return (
     <>
-      <div className="mt-[10rem] m-[10rem]">
-        <Homepage />
-      </div>
-      <About />
+      <Homepage />
+      {/* <About /> */}
     </>
   );
 }

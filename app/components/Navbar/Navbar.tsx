@@ -1,8 +1,8 @@
 "use client";
 
+import "./Navbar.css";
 import React, { useRef } from "react";
 import Link from "next/link";
-import "../App.css";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -15,12 +15,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar fixed-navbar">
+    <nav className="bg-[#ffffff] fixed-navbar mx-auto">
       <div className="navbar-container">
-        <a href="#" className="brand-title">
+        <a href="/">
           <Image
             src="/logo-holywood.png"
-            alt=""
+            alt="logo"
             width={70}
             height={70}
             className="object-contain"
