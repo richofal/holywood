@@ -28,7 +28,7 @@ function About() {
           <img
             src="/thumbnail.png"
             alt="Thumbnail Video YouTube"
-            className="shadow-lg w-[500px] group-hover:scale-110 transition-transform duration-300"
+            className="w-[500px] group-hover:scale-110 transition-transform duration-300 py-5"
           />
           <img
             src="/video.png"
