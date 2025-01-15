@@ -57,7 +57,7 @@ function Services() {
           </p>
         </div>
         <div className="bg-gray-100 p-6 text-center rounded-lg justify-center items-center flex flex-col">
-          <h3 className="text-xl font-semibold mb-6">Pesan Sekarang</h3>
+          <h3 className="text-xl font-semibold mb-6 mt-2">Pesan Sekarang</h3>
           <p>
             Klik tombol di bawah ini untuk memulai proyek seni lukis bakar Anda
             bersama kami. Kami siap membantu mewujudkan karya impian Anda!
