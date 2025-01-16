@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "quote": "Customer servicenya responsive & komunikatif",
+    "message": "Dari awal sudah puas duluan dengan pelayanan customer servicenya yang komunikatif",
+    "image": "/deviani.svg",
+    "name": "Deviani",
+    "role": "Interior Designer"
+  },
+  {
+    "id": 2,
+    "quote": "Pengerjaannya halus dan ada garansi",
+    "message": "Finishingnya sesuai dengan harapan saya, jika ada cacat produksi juga bisa tukar baru",
+    "image": "./richo.jpg",
+    "name": "Richo",
+    "role": "Web Developer"
+  },
+  {
+    "id": 3,
+    "quote": "Bisa maklon dan produksi partai besar",
+    "message": "Sebagai internet marketer saya puas sekali karena bisa embos brand saya sendiri",
+    "image": "./andika.png",
+    "name": "Andika",
+    "role": "Artist"
+  },
+  {
+    "id": 4,
+    "quote": "Customer servicenya responsive & komunikatif",
+    "message": "Dari awal sudah puas duluan dengan pelayanan customer servicenya yang komunikatif",
+    "image": "/deviani.svg",
+    "name": "Deviani",
+    "role": "Interior Designer"
+  },
+  {
+    "quote": "Pengerjaannya halus dan ada garansi",
+    "message": "Finishingnya sesuai dengan harapan saya, jika ada cacat produksi juga bisa tukar baru",
+    "image": "./richo.jpg",
+    "name": "Richo",
+    "role": "Web Developer"
+  }
+]

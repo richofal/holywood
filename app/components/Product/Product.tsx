@@ -155,7 +155,7 @@ function Product() {
                 }`}
               />
               <p
-                className={`text-black mb-6 ${
+                className={`text-black ${
                   isLargeScreen
                     ? "text-left w-full"
                     : "text-center w-full mx-auto py-5 text-md"
@@ -250,9 +250,9 @@ function Product() {
                 }`}
               />
               <p
-                className={`text-black mb-6 ${
+                className={`text-black ${
                   isLargeScreen
-                    ? "text-left w-full"
+                    ? "text-left w-full mb-6"
                     : "text-center w-full mx-auto py-5 text-md"
                 }`}
                 style={{ lineHeight: "25px" }}
