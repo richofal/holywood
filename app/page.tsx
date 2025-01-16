@@ -4,6 +4,7 @@ import Services from "./components/Layanan/Services";
 import Product from "./components/Product/Product";
 import Order from "./components/Order/Order";
 import Testimonial from "./components/Testimonial/Testimonial";
+import Catalog from "./components/Catalog/Catalog";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Product />
       <Order />
       <Testimonial />
+      <Catalog />
     </>
   );
 }
