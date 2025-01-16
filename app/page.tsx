@@ -6,6 +6,8 @@ import Order from "./components/Order/Order";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Catalog from "./components/Catalog/Catalog";
 import Faq from "./components/Faq/Faq";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <Testimonial />
       <Catalog />
       <Faq />
+      <Contact />
+      <Footer />
     </>
   );
 }
