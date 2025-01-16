@@ -1,0 +1,20 @@
+[
+  {
+    "number": "01",
+    "question": "Apakah bisa custom?",
+    "answer": "Tentu saja bisa. Anda bisa memberikan gambar atau spesifikasi produk kerajinan kayu yang Anda inginkan.",
+    "isOpen": true
+  },
+  {
+    "number": "02",
+    "question": "Apakah ada garansi cacat produksi?",
+    "answer": "Ya, kami memberikan garansi untuk cacat produksi.",
+    "isOpen": false
+  },
+  {
+    "number": "03",
+    "question": "Berapa lama durasi pengerjaannya?",
+    "answer": "Durasi pengerjaan tergantung pada tingkat kesulitan, biasanya antara 7 hingga 14 hari.",
+    "isOpen": false
+  }
+]
