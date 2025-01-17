@@ -5,6 +5,13 @@ import { useState, useEffect } from "react";
 
 function Services() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const whatsAppNumber = "881027707533";
+  const baseUrl = "https://wa.me/62";
+  const message =
+    "Halo, dengan kami Holywood Indonesia, ada yang bisa dibantu? Hubungi sekarang";
+  const url = `${baseUrl}${whatsAppNumber}`;
+  const encodedMessage = encodeURIComponent(message);
+  const urlWithMessage = `${url}?text=${encodedMessage}`;
 
   const checkScreenSize = () => {
     if (window.innerWidth > 1240) {
@@ -84,7 +91,12 @@ function Services() {
             Klik tombol di bawah ini untuk memulai proyek seni lukis bakar Anda
             bersama kami. Kami siap membantu mewujudkan karya impian Anda!
           </p>
-          <button className="mt-6 mb-2 px-4 py-2 bg-[#C02020] text-white rounded font-medium">
+          <button
+            className="mt-6 mb-2 px-4 py-2 bg-[#C02020] text-white rounded font-medium"
+            onClick={() => {
+              window.open(urlWithMessage, "_blank");
+            }}
+          >
             Pesan Sekarang
           </button>
           <div id="product"></div>

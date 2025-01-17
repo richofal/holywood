@@ -82,8 +82,14 @@ function Catalog() {
                 className={`bg-white text-black font-medium ${
                   isLargeScreen ? "w-full" : ""
                 } py-2 px-4 rounded-sm`}
+                onClick={() => {
+                  window.open(
+                    "https://drive.google.com/drive/folders/1F7zTJOhRfbnhpa0pJqgNTLm3d7nTF5Fc?usp=sharing",
+                    "_blank"
+                  );
+                }}
               >
-                Pesan Sekarang
+                Lihat Produk Ready
               </button>
               <div
                 className={`${

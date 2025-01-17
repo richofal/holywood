@@ -4,6 +4,13 @@ import React, { useState, useEffect } from "react";
 
 function ContactUs() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const whatsAppNumber = "881027707533";
+  const baseUrl = "https://wa.me/62";
+  const message =
+    "Halo, dengan kami Holywood Indonesia, ada yang bisa dibantu? Hubungi sekarang";
+  const url = `${baseUrl}${whatsAppNumber}`;
+  const encodedMessage = encodeURIComponent(message);
+  const urlWithMessage = `${url}?text=${encodedMessage}`;
 
   const checkScreenSize = () => {
     if (window.innerWidth > 1240) {
@@ -33,7 +40,12 @@ function ContactUs() {
         Pesan kerajinan kayu lukis bakar custom & batik unik Anda bersama
         Holywood Indonesia.
       </p>
-      <button className="bg-white text-black px-6 py-2 rounded-md mb-8 font-medium">
+      <button
+        className="bg-white text-black px-6 py-2 rounded-md mb-8 font-medium"
+        onClick={() => {
+          window.open(urlWithMessage, "_blank");
+        }}
+      >
         Pesan Sekarang
       </button>
       <hr className="border-white w-[80%] mb-8" />
@@ -63,17 +75,20 @@ function ContactUs() {
         <p>gabyworktime@gmail.com</p>
       </div>
       <div className="flex space-x-4 mb-8">
-        <a href="#" className="text-white">
-          <i className="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" className="text-white">
+        <a href="https://www.instagram.com/gabrielsatya" className="text-white">
           <i className="fab fa-instagram"></i>
         </a>
-        <a href="#" className="text-white">
-          <i className="fab fa-youtube"></i>
+        <a href="https://www.tiktok.com/@gabriel_satya" className="text-white">
+          <i className="fab fa-tiktok"></i>
         </a>
-        <a href="#" className="text-white">
-          <i className="fab fa-linkedin-in"></i>
+        <a
+          href="https://www.facebook.com/61564865737893"
+          className="text-white"
+        >
+          <i className="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://medium.com/@gabyworktime" className="text-white">
+          <i className="fab fa-medium"></i>
         </a>
       </div>
     </div>
