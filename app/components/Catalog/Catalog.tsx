@@ -24,7 +24,7 @@ function Catalog() {
 
   return (
     <>
-      <div className="bg-black text-white flex items-center justify-center py-16 px-8">
+      <div className="bg-black text-white flex items-center justify-center py-10 px-8">
         <div className="max-w-7xl mx-auto bg-black p-6 rounded-lg">
           <div
             className={`${
@@ -54,8 +54,8 @@ function Catalog() {
               }`}
             >
               <h1
-                className={`font-bold ${
-                  isLargeScreen ? "mb-5 text-2xl" : "mb-7 mt-5 text-xl"
+                className={`font-bold text-2xl ${
+                  isLargeScreen ? "mb-5" : "mb-7 mt-5"
                 }`}
               >
                 Katalog Produk Ready

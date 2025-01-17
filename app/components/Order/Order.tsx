@@ -27,8 +27,8 @@ function Order() {
       <div className="flex flex-col md:flex-row items-center md:items-start rounded-lg">
         <div className={`md:w-1/2 ${isLargeScreen ? "ml-52" : "mb-14"}`}>
           <h2
-            className={`text-[#909298] font-bold mb-5 ${
-              isLargeScreen ? "text-sm" : "text-md flex justify-center"
+            className={`text-[#909298] font-medium mb-5 text-md ${
+              isLargeScreen ? "" : "flex justify-center"
             }`}
           >
             Cara Pemesanan
@@ -69,13 +69,13 @@ function Order() {
         </div>
         <div
           className={`md:w-1/2 md:mt-0 md:ml-6 ${
-            isLargeScreen ? "self-end mt-4" : "mt-6"
+            isLargeScreen ? "self-end mt-4" : ""
           }`}
         >
           <img
             src="/order.svg"
             alt="Wooden tray with two compartments"
-            className="w-[200px]  h-auto"
+            className="w-[200px] h-auto"
           />
         </div>
       </div>
