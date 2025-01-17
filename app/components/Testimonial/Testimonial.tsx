@@ -94,6 +94,7 @@ function Testimonial() {
           </button>
         </div>
       </div>
+      <div id="catalog" className={`${isLargeScreen ? "py-3" : ""}`}></div>
     </div>
   );
 }

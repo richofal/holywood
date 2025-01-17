@@ -37,65 +37,71 @@ function Faq() {
   };
 
   return (
-    <div
-      className={`${isLargeScreen ? "flex md:flex-row" : "flex flex-col"} p-16`}
-    >
+    <>
+      <div id="faq" className="py-4"></div>
       <div
         className={`${
-          isLargeScreen ? "md:w-[40%]" : "w-full"
-        } items-center flex flex-col justify-center m-3`}
+          isLargeScreen ? "flex md:flex-row" : "flex flex-col"
+        } p-16 mb-4`}
       >
-        <h2 className="text-gray-400 font-bold text-lg">FAQ</h2>
-        <h1
+        <div
           className={`${
-            isLargeScreen ? "text-2xl" : "text-xl text-center"
-          } font-bold text-gray-800 mt-2`}
+            isLargeScreen ? "md:w-[40%]" : "w-full"
+          } items-center flex flex-col justify-center m-3`}
         >
-          Pertanyaan Yang Sering Ditanyakan
-        </h1>
-        <hr
-          className={`border-t-2 border-[#A6795B] w-16 h-5 mt-5 ${
-            isLargeScreen ? "w-[20%]" : "w-[50%] mx-auto"
-          }`}
-        />
-      </div>
-      <div
-        className={`${
-          isLargeScreen ? "md:w-[60%]" : "w-full"
-        } bg-gray-200 p-5 m-2 pb-10`}
-      >
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className="border-b border-white py-4 cursor-pointer"
-            onMouseDown={() => toggleFAQ(index)}
+          <h2 className="text-gray-400 font-bold text-lg">FAQ</h2>
+          <h1
+            className={`${
+              isLargeScreen ? "text-2xl" : "text-xl text-center"
+            } font-bold text-gray-800 mt-2`}
           >
-            <div className="flex justify-between items-center">
-              <div className="flex items-center">
-                <span className="text-[#A6795B] mr-4 self-start">
-                  {faq.number}
-                </span>
-                <span
-                  className={`text-black font-medium px-2${
-                    isLargeScreen ? "" : ""
-                  }`}
-                >
-                  {faq.question}
-                </span>
+            Pertanyaan Yang Sering Ditanyakan
+          </h1>
+          <hr
+            className={`border-t-2 border-[#A6795B] w-16 h-5 mt-5 ${
+              isLargeScreen ? "w-[20%]" : "w-[50%] mx-auto"
+            }`}
+          />
+        </div>
+        <div
+          className={`${
+            isLargeScreen ? "md:w-[60%]" : "w-full"
+          } bg-gray-200 p-5 m-2 pb-10`}
+        >
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="border-b border-white py-4 cursor-pointer"
+              onMouseDown={() => toggleFAQ(index)}
+            >
+              <div className="flex justify-between items-center">
+                <div className="flex items-center">
+                  <span className="text-[#A6795B] mr-4 self-start">
+                    {faq.number}
+                  </span>
+                  <span
+                    className={`text-black font-medium px-2${
+                      isLargeScreen ? "" : ""
+                    }`}
+                  >
+                    {faq.question}
+                  </span>
+                </div>
+                <i
+                  className={`fas ${
+                    openIndex === index ? "fa-minus" : "fa-plus"
+                  } text-gray-400 cursor-pointer self-start`}
+                ></i>
               </div>
-              <i
-                className={`fas ${
-                  openIndex === index ? "fa-minus" : "fa-plus"
-                } text-gray-400 cursor-pointer self-start`}
-              ></i>
+              {openIndex === index && (
+                <p className="mt-2 text-gray-600">{faq.answer}</p>
+              )}
             </div>
-            {openIndex === index && (
-              <p className="mt-2 text-gray-600">{faq.answer}</p>
-            )}
-          </div>
-        ))}
+          ))}
+          <div id="contact"></div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

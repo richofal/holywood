@@ -24,7 +24,7 @@ function About() {
   }, []);
 
   return (
-    <div className="w-full bg-[#D9D9D9] mt-20" id="about">
+    <div className="w-full bg-[#D9D9D9] mt-20">
       <div className="p-8 rounded-lg max-w-2xl lg:max-w-4xl text-center mx-auto my-10">
         <h1 className="text-3xl font-semibold mb-6 mt-5">About Us</h1>
         <hr className="border-t-2 border-[#A6795B] mb-9" />
@@ -62,6 +62,7 @@ function About() {
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 opacity-90 group-hover:hidden"
           />
         </a>
+        <div id="services" className="py-3"></div>
       </div>
     </div>
   );

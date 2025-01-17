@@ -24,7 +24,7 @@ function Services() {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto px-8 py-2" id="services">
+    <div className="max-w-7xl mx-auto px-8 py-2">
       <h2 className={`text-center text-[#909298] text-md font-medium mb-5`}>
         Keunggulan Layanan dan Kepercayaan
       </h2>
@@ -87,6 +87,7 @@ function Services() {
           <button className="mt-6 mb-2 px-4 py-2 bg-[#C02020] text-white rounded font-medium">
             Pesan Sekarang
           </button>
+          <div id="product"></div>
         </div>
       </div>
     </div>

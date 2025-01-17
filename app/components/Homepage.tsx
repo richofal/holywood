@@ -26,22 +26,25 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div className="w-full">
-      <div className={`mx-10 ${isLargeScreen ? "mt-16" : "mt-3"}`}>
-        <div
-          className={`flex ${isLargeScreen ? "flex-row" : "flex-col"} ${
-            isLargeScreen ? "gap-20" : "gap-10"
-          } ${isLargeScreen ? "justify-center" : ""}`}
-        >
-          <div className={`${isLargeScreen ? "" : "order-2"}`}>
-            <Card />
-          </div>
-          <div className={`${isLargeScreen ? "" : "order-1"}`}>
-            <Hero />
+    <>
+      <div className="w-full">
+        <div className={`mx-10 ${isLargeScreen ? "mt-16" : "mt-3"}`}>
+          <div
+            className={`flex ${isLargeScreen ? "flex-row" : "flex-col"} ${
+              isLargeScreen ? "gap-20" : "gap-10"
+            } ${isLargeScreen ? "justify-center" : ""}`}
+          >
+            <div className={`${isLargeScreen ? "" : "order-2"}`}>
+              <Card />
+            </div>
+            <div className={`${isLargeScreen ? "" : "order-1"}`}>
+              <Hero />
+            </div>
           </div>
         </div>
+        <div id="about"></div>
       </div>
-    </div>
+    </>
   );
 };
 
