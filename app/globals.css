@@ -14,8 +14,9 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
-  height: 100vh;
+  height: 100%;
   margin: 0;
+  position: relative;
 }
 
 :root {
@@ -28,10 +29,4 @@ body {
     --background: #0a0a0a;
     --foreground: #ffffff;
   }
-}
-
-/* CSS to prevent navbar from covering sections */
-section[id] {
-  padding-top: 80px;  /* Adjust to the height of your navbar */
-  margin-top: -80px;   /* Negative margin to offset padding */
 }

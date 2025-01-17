@@ -13,6 +13,11 @@
   width: 80%;
   margin: 0 auto;
   padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .navbar-toggler {
@@ -126,4 +131,8 @@ nav a.is-active {
     width: 0;
     overflow: hidden;
   }
+}
+
+section[id] {
+  scroll-margin-top: 16px; /* Atur jarak 16px dari atas saat scroll ke ID */
 }

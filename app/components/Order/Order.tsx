@@ -77,6 +77,7 @@ function Order() {
             alt="Wooden tray with two compartments"
             className="w-[200px] h-auto"
           />
+          <div id="testimonial"></div>
         </div>
       </div>
     </div>

@@ -266,6 +266,7 @@ function Product() {
               <p className="opacity-80 italic">
                 NB : Garansi ini berlaku dengan kebijakan pelayanan
               </p>
+              <div id="steps"></div>
             </div>
           </div>
         </div>
