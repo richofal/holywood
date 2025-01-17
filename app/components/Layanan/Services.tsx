@@ -1,15 +1,37 @@
+"use client";
+
 import React from "react";
+import { useState, useEffect } from "react";
 
 function Services() {
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  const checkScreenSize = () => {
+    if (window.innerWidth > 1240) {
+      setIsLargeScreen(true);
+    } else {
+      setIsLargeScreen(false);
+    }
+  };
+
+  useEffect(() => {
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+    };
+  }, []);
+
   return (
-    <div className="max-w-7xl mx-auto px-8 py-2">
-      <h2 className="text-center text-[#909298] text-lg font-medium mb-5">
+    <div className="max-w-7xl mx-auto px-8 py-2" id="services">
+      <h2 className={`text-center text-[#909298] text-md font-medium mb-5`}>
         Keunggulan Layanan dan Kepercayaan
       </h2>
-      <h1 className="text-center text-3xl font-bold mb-14">
+      <h1 className={`text-center text-3xl font-bold mb-14`}>
         Mengapa Harus Dengan Kami?
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
         <div className="bg-gray-100 p-6 text-center rounded-lg">
           <i className="fas fa-lightbulb text-4xl text-[#A3826C] mb-4 py-2"></i>
           <h3 className="text-xl font-semibold mb-4">100% Custom</h3>

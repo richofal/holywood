@@ -51,12 +51,12 @@ function Testimonial() {
   const visibleTestimonials = getVisibleTestimonials();
 
   return (
-    <div className="bg-white py-16 px-8">
+    <div className="bg-white py-10 pb-16 px-8">
       <div className="flex flex-col items-center">
         <h1
           className={`${
-            isLargeScreen ? "text-2xl" : "text-xl"
-          } font-bold mb-2 mt-5 text-center`}
+            isLargeScreen ? "" : ""
+          } font-bold mb-2 mt-5 text-center text-2xl`}
         >
           Lebih Dari 30+ Project Terselesaikan
         </h1>

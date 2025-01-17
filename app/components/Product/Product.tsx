@@ -24,7 +24,7 @@ function Product() {
 
   return (
     <>
-      <div className="bg-black text-white flex items-center justify-center py-16 px-8">
+      <div className="bg-black text-white flex items-center justify-center py-10 px-8">
         <div className="max-w-7xl mx-auto bg-black p-6 rounded-lg">
           <div
             className={`${
@@ -50,15 +50,15 @@ function Product() {
             </div>
             <div className={`${isLargeScreen ? "text-left" : "text-center"}`}>
               <h2
-                className={`text-[#909298] ${
-                  isLargeScreen ? "text-lg" : "text-md"
-                } font-bold mb-3`}
+                className={`text-[#909298] text-md ${
+                  isLargeScreen ? "" : ""
+                } font-medium mb-3`}
               >
                 Produk
               </h2>
               <h1
-                className={`font-bold ${
-                  isLargeScreen ? "mb-5 text-2xl" : "mb-7 mt-5 text-xl"
+                className={`font-bold text-2xl ${
+                  isLargeScreen ? "mb-5" : "mb-7 mt-5"
                 }`}
               >
                 Harga Jasa Pembuatan Lukisan dan Batik (Lukis Bakar)
@@ -69,10 +69,10 @@ function Product() {
                 }`}
               />
               <p
-                className={`text-white mb-6 ${
+                className={`text-white mb-6 py-5 ${
                   isLargeScreen
                     ? "text-left w-full"
-                    : "text-center w-full mx-auto py-5 text-md"
+                    : "text-center w-full mx-auto text-md"
                 }`}
                 style={{ lineHeight: "25px" }}
               >
@@ -111,7 +111,7 @@ function Product() {
         </div>
       </div>
 
-      <div className="bg-white text-black flex items-center justify-center py-16 px-8">
+      <div className="bg-white text-black flex items-center justify-center py-16 pb-6 px-8">
         <div className="max-w-7xl mx-auto bg-white p-2 rounded-lg">
           <div
             className={`${
