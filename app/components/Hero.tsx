@@ -4,6 +4,13 @@ import React, { useState, useEffect } from "react";
 
 function Hero() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const whatsAppNumber = "881027707533";
+  const baseUrl = "https://wa.me/62";
+  const message =
+    "Halo, dengan kami Holywood Indonesia, ada yang bisa dibantu? Hubungi sekarang";
+  const url = `${baseUrl}${whatsAppNumber}`;
+  const encodedMessage = encodeURIComponent(message);
+  const urlWithMessage = `${url}?text=${encodedMessage}`;
 
   const checkScreenSize = () => {
     if (window.innerWidth > 1240) {
@@ -79,7 +86,12 @@ function Hero() {
       <div
         className={`flex ${isLargeScreen ? "justify-start" : "justify-center"}`}
       >
-        <button className="mt-10 ml-4 px-6 py-2 bg-[#C02020] text-white font-medium rounded">
+        <button
+          className="mt-10 ml-4 px-6 py-2 bg-[#C02020] text-white font-medium rounded"
+          onClick={() => {
+            window.open(urlWithMessage, "_blank");
+          }}
+        >
           Pesan Custom
         </button>
       </div>

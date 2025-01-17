@@ -4,6 +4,13 @@ import React, { useState, useEffect } from "react";
 
 function Product() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const whatsAppNumber = "881027707533";
+  const baseUrl = "https://wa.me/62";
+  const message =
+    "Halo, dengan kami Holywood Indonesia, ada yang bisa dibantu? Hubungi sekarang";
+  const url = `${baseUrl}${whatsAppNumber}`;
+  const encodedMessage = encodeURIComponent(message);
+  const urlWithMessage = `${url}?text=${encodedMessage}`;
 
   const checkScreenSize = () => {
     if (window.innerWidth > 1240) {
@@ -86,6 +93,9 @@ function Product() {
                 className={`bg-white text-black font-medium ${
                   isLargeScreen ? "w-full" : ""
                 } py-2 px-4 rounded-sm`}
+                onClick={() => {
+                  window.open(urlWithMessage, "_blank");
+                }}
               >
                 Pesan Sekarang
               </button>
