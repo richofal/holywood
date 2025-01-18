@@ -2,19 +2,43 @@
   {
     "number": "01",
     "question": "Apakah bisa custom?",
-    "answer": "Tentu saja bisa. Anda bisa memberikan gambar atau spesifikasi produk kerajinan kayu yang Anda inginkan.",
+    "answer": "Ya, kami menyediakan layanan custom sesuai kebutuhan pelanggan. Anda bisa mengirimkan desain atau spesifikasi yang diinginkan.",
     "isOpen": true
   },
   {
     "number": "02",
     "question": "Apakah ada garansi cacat produksi?",
-    "answer": "Ya, kami memberikan garansi untuk cacat produksi.",
+    "answer": "Tentu saja, kami memberikan garansi untuk setiap produk yang mengalami cacat produksi. Silakan hubungi kami dalam waktu [1-2 minggu] setelah produk diterima.",
     "isOpen": false
   },
   {
     "number": "03",
     "question": "Berapa lama durasi pengerjaannya?",
-    "answer": "Durasi pengerjaan tergantung pada tingkat kesulitan, biasanya antara 7 hingga 14 hari.",
+    "answer": "Durasi pengerjaan bergantung pada tingkat kesulitan dan jumlah pesanan. Rata-rata membutuhkan waktu sekitar [1-2 minggu], tetapi kami akan memberikan estimasi yang lebih akurat setelah detail pesanan diterima.",
+    "isOpen": false
+  },
+  {
+    "number": "04",
+    "question": "Apakah harga bisa nego?",
+    "answer": "Harga kami sudah disesuaikan dengan kualitas produk, tetapi untuk pesanan dalam jumlah besar, kami bisa mendiskusikan harga terbaik. Silakan hubungi kami untuk lebih jelasnya",
+    "isOpen": false
+  },
+  {
+    "number": "05",
+    "question": "Bagaimana cara pembayaran?",
+    "answer": "Kami menerima pembayaran melalui transfer bank dan COD khusus area sidoarjo dan surabaya. Detail pembayaran akan kami kirimkan setelah pesanan dikonfirmasi.",
+    "isOpen": false
+  },
+  {
+    "number": "06",
+    "question": "Apakah tersedia pengiriman ke luar kota/negara?",
+    "answer": "Ya, kami melayani pengiriman ke seluruh Indonesia dan beberapa negara lainnya. Biaya pengiriman akan disesuaikan dengan lokasi tujuan.",
+    "isOpen": false
+  },
+  {
+    "number": "07",
+    "question": "Apakah produk ini tahan lama?",
+    "answer": "Produk kami dibuat dengan bahan berkualitas tinggi dan melalui proses produksi yang ketat untuk memastikan daya tahannya. Kami juga memberikan panduan perawatan untuk memastikan produk tetap awet.",
     "isOpen": false
   }
 ]

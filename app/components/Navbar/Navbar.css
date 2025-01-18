@@ -15,14 +15,13 @@
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  padding: 1rem;
 }
 
 .navbar-toggler {
   padding: 0.5rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;

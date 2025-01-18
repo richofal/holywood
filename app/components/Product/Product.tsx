@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 function Product() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
-  const whatsAppNumber = "881027707533";
+  const whatsAppNumber = "82338372100";
   const baseUrl = "https://wa.me/62";
   const message =
     "Halo, dengan kami Holywood Indonesia, ada yang bisa dibantu? Hubungi sekarang";
@@ -31,8 +31,8 @@ function Product() {
 
   return (
     <>
-      <div className="bg-black text-white flex items-center justify-center py-10 px-8">
-        <div className="max-w-7xl mx-auto bg-black p-6 rounded-lg">
+      <div className="bg-[#faebd7] text-black flex items-center justify-center py-10 px-8">
+        <div className="max-w-7xl mx-auto p-6 rounded-lg">
           <div
             className={`${
               isLargeScreen
@@ -47,9 +47,9 @@ function Product() {
             >
               <div className="w-64">
                 <img
-                  src="product.svg"
+                  src="product.jpg"
                   alt="Wooden bowl and utensils"
-                  className={`rounded-full object-cover w-full h-full ${
+                  className={`object-cover rounded-lg w-full h-full ${
                     isLargeScreen ? "" : "hidden"
                   }`}
                 />
@@ -57,7 +57,7 @@ function Product() {
             </div>
             <div className={`${isLargeScreen ? "text-left" : "text-center"}`}>
               <h2
-                className={`text-[#909298] text-md ${
+                className={`text-black text-md ${
                   isLargeScreen ? "" : ""
                 } font-medium mb-3`}
               >
@@ -71,12 +71,12 @@ function Product() {
                 Harga Jasa Pembuatan Lukisan dan Batik (Lukis Bakar)
               </h1>
               <hr
-                className={`border-t border-[#A6795B] mb-4 ${
+                className={`border-t border-black mb-4 ${
                   isLargeScreen ? "w-[20%]" : "w-[50%] mx-auto"
                 }`}
               />
               <p
-                className={`text-white mb-6 py-5 ${
+                className={`text-black mb-6 py-5 ${
                   isLargeScreen
                     ? "text-left w-full"
                     : "text-center w-full mx-auto text-md"
@@ -87,10 +87,10 @@ function Product() {
                 bersaing. Biaya tergantung pada, tingkat detail, dimensi desain,
                 serta tingkat kesulitan. Pigura jati dan alas kayu sengon. Harga
                 mulai dari 169 rb. Pemesanan dalam jumlah besar berhak
-                mendapatkan diskon khusus.
+                mendapatkan harga khusus.
               </p>
               <button
-                className={`bg-white text-black font-medium ${
+                className={`bg-[#C02020] text-white font-medium ${
                   isLargeScreen ? "w-full" : ""
                 } py-2 px-4 rounded-sm`}
                 onClick={() => {
@@ -108,9 +108,9 @@ function Product() {
               >
                 <div className="w-64">
                   <img
-                    src="product.svg"
+                    src="product.jpg"
                     alt="Wooden bowl and utensils"
-                    className={`rounded-full object-cover w-full h-full ${
+                    className={`rounded-lg object-cover w-full h-full ${
                       isLargeScreen ? "hidden" : ""
                     }`}
                   />
@@ -144,7 +144,7 @@ function Product() {
               >
                 <div className="w-64">
                   <img
-                    src="pengiriman.svg"
+                    src="pengiriman.jpg"
                     alt="Wooden bowl and utensils"
                     className={`rounded-full object-cover w-full h-full ${
                       isLargeScreen ? "hidden" : ""
@@ -189,7 +189,7 @@ function Product() {
             >
               <div className="w-64">
                 <img
-                  src="pengiriman.svg"
+                  src="pengiriman.jpg"
                   alt="Wooden bowl and utensils"
                   className={`rounded-full object-cover w-full h-full ${
                     isLargeScreen ? "" : "hidden"
@@ -217,7 +217,7 @@ function Product() {
             >
               <div className="w-64">
                 <img
-                  src="garansi.svg"
+                  src="garansi.jpg"
                   alt="Wooden bowl and utensils"
                   className={`rounded-full object-cover w-full h-full ${
                     isLargeScreen ? "" : "hidden"
@@ -239,7 +239,7 @@ function Product() {
               >
                 <div className="w-64">
                   <img
-                    src="garansi.svg"
+                    src="garansi.jpg"
                     alt="Wooden bowl and utensils"
                     className={`rounded-full object-cover w-full h-full ${
                       isLargeScreen ? "hidden" : ""
