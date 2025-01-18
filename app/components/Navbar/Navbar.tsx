@@ -1,11 +1,12 @@
 "use client";
 
 import "./Navbar.css";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const Navbar = () => {
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
   const navbarLinks = useRef<HTMLDivElement>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Menyimpan status menu
 
@@ -19,6 +20,23 @@ const Navbar = () => {
     }
     setIsMenuOpen(false); // Menonaktifkan toggle setelah menu item diklik
   };
+
+  const checkScreenSize = () => {
+    if (window.innerWidth > 1240) {
+      setIsLargeScreen(true);
+    } else {
+      setIsLargeScreen(false);
+    }
+  };
+
+  useEffect(() => {
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+    };
+  }, []);
 
   return (
     <nav className="bg-[#ffffff] fixed-navbar mx-auto">
@@ -37,7 +55,7 @@ const Navbar = () => {
         </button>
         <div
           ref={navbarLinks}
-          className={`navbar-links ${isMenuOpen ? "" : "menu-collapse"}`} // Menggunakan state untuk toggle kelas
+          className={`navbar-links ${isMenuOpen ? "" : "menu-collapse"}`}
         >
           <ul className="links-list">
             <li className="nav-item">
@@ -46,42 +64,74 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="#about" className="nav-link" onClick={handleMenuItemClick}>
+              <Link
+                href="#about"
+                className="nav-link"
+                onClick={handleMenuItemClick}
+              >
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="#services" className="nav-link" onClick={handleMenuItemClick}>
+              <Link
+                href="#services"
+                className="nav-link"
+                onClick={handleMenuItemClick}
+              >
                 Services
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="#product" className="nav-link" onClick={handleMenuItemClick}>
+              <Link
+                href="#product"
+                className="nav-link"
+                onClick={handleMenuItemClick}
+              >
                 Product
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="#steps" className="nav-link" onClick={handleMenuItemClick}>
+              <Link
+                href="#steps"
+                className="nav-link"
+                onClick={handleMenuItemClick}
+              >
                 Steps
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="#testimonial" className="nav-link" onClick={handleMenuItemClick}>
+              <Link
+                href="#testimonial"
+                className="nav-link"
+                onClick={handleMenuItemClick}
+              >
                 Testimonial
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="#catalog" className="nav-link" onClick={handleMenuItemClick}>
+              <Link
+                href="#catalog"
+                className="nav-link"
+                onClick={handleMenuItemClick}
+              >
                 Catalog
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="#faq" className="nav-link" onClick={handleMenuItemClick}>
+              <Link
+                href="#faq"
+                className="nav-link"
+                onClick={handleMenuItemClick}
+              >
                 FAQ
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="#contact" className="nav-link" onClick={handleMenuItemClick}>
+              <Link
+                href="#contact"
+                className="nav-link"
+                onClick={handleMenuItemClick}
+              >
                 Contact
               </Link>
             </li>

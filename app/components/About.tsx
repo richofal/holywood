@@ -45,7 +45,7 @@ function About() {
         <a
           href="https://www.youtube.com/watch?v=WrqrVgTaWzc"
           target="_blank"
-          className="relative inline-block mt-7 group"
+          className="hidden relative inline-block mt-7 group"
         >
           <img
             src="/thumbnail.png"

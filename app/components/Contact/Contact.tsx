@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 function ContactUs() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
-  const whatsAppNumber = "881027707533";
+  const whatsAppNumber = "82338372100";
   const baseUrl = "https://wa.me/62";
   const message =
     "Halo, dengan kami Holywood Indonesia, ada yang bisa dibantu? Hubungi sekarang";

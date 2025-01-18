@@ -25,7 +25,7 @@ function Order() {
   return (
     <div className="bg-[#D9D9D9]  justify-center items-center p-16">
       <div className="flex flex-col md:flex-row items-center md:items-start rounded-lg">
-        <div className={`md:w-1/2 ${isLargeScreen ? "ml-52" : "mb-14"}`}>
+        <div className={`md:w-1/2 ${isLargeScreen ? "ml-52" : ""}`}>
           <h2
             className={`text-[#909298] font-medium mb-5 text-md ${
               isLargeScreen ? "" : "flex justify-center"
@@ -73,9 +73,9 @@ function Order() {
           }`}
         >
           <img
-            src="/order.svg"
+            src="/order.png"
             alt="Wooden tray with two compartments"
-            className="w-[200px] h-auto"
+            className={`${isLargeScreen ? "w-[500px]" : ""} h-auto`}
           />
           <div id="testimonial"></div>
         </div>
