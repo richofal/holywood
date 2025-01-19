@@ -34,16 +34,36 @@ const Homepage = () => {
               isLargeScreen ? "gap-20" : "gap-10"
             } ${isLargeScreen ? "justify-center" : ""}`}
           >
-            <div className={`${isLargeScreen ? "" : "order-2"}`}>
+            <div
+              className={`${isLargeScreen ? "" : "order-2"} animate-slide-up`}
+            >
               <Card />
             </div>
-            <div className={`${isLargeScreen ? "" : "order-1"}`}>
+            <div
+              className={`${isLargeScreen ? "" : "order-1"} animate-slide-up`}
+            >
               <Hero />
             </div>
           </div>
         </div>
         <div id="about"></div>
       </div>
+
+      <style jsx>{`
+        @keyframes slide-up {
+          from {
+            transform: translateY(20px);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+        .animate-slide-up {
+          animation: slide-up 0.5s ease-out;
+        }
+      `}</style>
     </>
   );
 };
