@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 function Catalog() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -39,9 +40,11 @@ function Catalog() {
               }`}
             >
               <div className="w-64">
-                <img
-                  src="katalog.jpg"
+                <Image
+                  src="/katalog.jpg"
                   alt="Wooden bowl and utensils"
+                  width={500}
+                  height={500}
                   className={`rounded-full object-cover w-full h-full ${
                     isLargeScreen ? "" : "hidden"
                   }`}
@@ -99,9 +102,11 @@ function Catalog() {
                 }`}
               >
                 <div className="w-64">
-                  <img
-                    src="katalog.jpg"
+                  <Image
+                    src="/katalog.jpg"
                     alt="Wooden bowl and utensils"
+                    width={500}
+                    height={500}
                     className={`rounded-full object-cover w-full h-full ${
                       isLargeScreen ? "hidden" : ""
                     }`}

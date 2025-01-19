@@ -11,7 +11,7 @@
     "id": 2,
     "quote": "Custom sesuka hati",
     "message": "Ga nyangka hasil customnya bisa mirip banget sama desain yang saya kirimkan, keren banget",
-    "image": "./richo.jpg",
+    "image": "/richo.jpg",
     "name": "Richo",
     "role": "Web Developer"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "quote": "Batiknya Keren",
     "message": "Lukis bakarnya keren, anak saya suka apalagi model batiknya",
-    "image": "./yendra.jpg",
+    "image": "/yendra.jpg",
     "name": "Yendra",
     "role": "Analis Kesehatan"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "quote": "Hasilnya Aesthetic",
     "message": "Salut sama proses belajar membatiknya, saya suka",
-    "image": "./debora.jpg",
+    "image": "/debora.jpg",
     "name": "Debora",
     "role": "Mahasiswi"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "quote": "Pengiriman Cepat",
     "message": "Pengiriman cepat sampai ke pelosok",
-    "image": "./rafi.jpg",
+    "image": "/rafi.jpg",
     "name": "Rafi",
     "role": "Pelajar"
   }

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 function Order() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -72,10 +73,12 @@ function Order() {
             isLargeScreen ? "self-end mt-4" : ""
           }`}
         >
-          <img
+          <Image
             src="/order.png"
             alt="Wooden tray with two compartments"
-            className={`${isLargeScreen ? "w-[500px]" : ""} h-auto`}
+            width={isLargeScreen ? 500 : 500}
+            height={300}
+            className="h-auto"
           />
           <div id="testimonial"></div>
         </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 function Product() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -46,9 +47,11 @@ function Product() {
               }`}
             >
               <div className="w-64">
-                <img
-                  src="product.jpg"
+                <Image
+                  src="/product.jpg"
                   alt="Wooden bowl and utensils"
+                  width={isLargeScreen ? 500 : 0}
+                  height={isLargeScreen ? 500 : 0}
                   className={`object-cover rounded-lg w-full h-full ${
                     isLargeScreen ? "" : "hidden"
                   }`}
@@ -107,9 +110,11 @@ function Product() {
                 }`}
               >
                 <div className="w-64">
-                  <img
-                    src="product.jpg"
+                  <Image
+                    src="/product.jpg"
                     alt="Wooden bowl and utensils"
+                    width={500}
+                    height={500}
                     className={`rounded-lg object-cover w-full h-full ${
                       isLargeScreen ? "hidden" : ""
                     }`}
@@ -143,9 +148,11 @@ function Product() {
                 }`}
               >
                 <div className="w-64">
-                  <img
-                    src="pengiriman.jpg"
+                  <Image
+                    src="/pengiriman.jpg"
                     alt="Wooden bowl and utensils"
+                    width={500}
+                    height={500}
                     className={`rounded-full object-cover w-full h-full ${
                       isLargeScreen ? "hidden" : ""
                     }`}
@@ -188,9 +195,11 @@ function Product() {
               }`}
             >
               <div className="w-64">
-                <img
-                  src="pengiriman.jpg"
+                <Image
+                  src="/pengiriman.jpg"
                   alt="Wooden bowl and utensils"
+                  width={500}
+                  height={500}
                   className={`rounded-full object-cover w-full h-full ${
                     isLargeScreen ? "" : "hidden"
                   }`}
@@ -216,9 +225,11 @@ function Product() {
               }`}
             >
               <div className="w-64">
-                <img
-                  src="garansi.jpg"
+                <Image
+                  src="/garansi.jpg"
                   alt="Wooden bowl and utensils"
+                  width={500}
+                  height={500}
                   className={`rounded-full object-cover w-full h-full ${
                     isLargeScreen ? "" : "hidden"
                   }`}
@@ -238,9 +249,11 @@ function Product() {
                 }`}
               >
                 <div className="w-64">
-                  <img
-                    src="garansi.jpg"
+                  <Image
+                    src="/garansi.jpg"
                     alt="Wooden bowl and utensils"
+                    width={500}
+                    height={500}
                     className={`rounded-full object-cover w-full h-full ${
                       isLargeScreen ? "hidden" : ""
                     }`}

@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 function About() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -47,19 +48,22 @@ function About() {
           target="_blank"
           className="hidden relative inline-block mt-7 group"
         >
-          <img
+          <Image
             src="/thumbnail.png"
             alt="Thumbnail Video YouTube"
+            width={isLargeScreen ? 500 : 400}
+            height={isLargeScreen ? 281 : 224}
             className={`${
-              isLargeScreen
-                ? "w-[500px] group-hover:scale-110"
-                : "w-[400px] group-hover:scale-105"
+              isLargeScreen ? "group-hover:scale-110" : "group-hover:scale-105"
             } transition-transform duration-300 py-5`}
           />
-          <img
+
+          <Image
             src="/video.png"
             alt="Logo YouTube"
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 opacity-90 group-hover:hidden"
+            width={64}
+            height={64}
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-90 group-hover:hidden"
           />
         </a>
         <div id="services" className="py-3"></div>

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import testimonialsData from "./Testimonial.json";
+import Image from "next/image";
 
 function Testimonial() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -79,10 +80,12 @@ function Testimonial() {
               >
                 <p className="font-bold mb-3">{testimonial.quote}</p>
                 <p className="">{testimonial.message}</p>
-                <img
+                <Image
                   src={testimonial.image}
                   alt={`Profile of ${testimonial.name}`}
-                  className="w-16 h-16 rounded-full mx-auto mt-8 mb-4"
+                  width={64}
+                  height={64}
+                  className="rounded-full mx-auto mt-8 mb-4"
                 />
                 <p className="font-bold mt-2">{testimonial.name}</p>
                 <p>{testimonial.role}</p>
