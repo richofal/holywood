@@ -1,10 +1,8 @@
 "use client";
 
 import React from "react";
-import { useState, useEffect } from "react";
 
 function Services() {
-  const [isLargeScreen, setIsLargeScreen] = useState(false);
   const whatsAppNumber = "82338372100";
   const baseUrl = "https://wa.me/62";
   const message =
@@ -12,23 +10,6 @@ function Services() {
   const url = `${baseUrl}${whatsAppNumber}`;
   const encodedMessage = encodeURIComponent(message);
   const urlWithMessage = `${url}?text=${encodedMessage}`;
-
-  const checkScreenSize = () => {
-    if (window.innerWidth > 1240) {
-      setIsLargeScreen(true);
-    } else {
-      setIsLargeScreen(false);
-    }
-  };
-
-  useEffect(() => {
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-
-    return () => {
-      window.removeEventListener("resize", checkScreenSize);
-    };
-  }, []);
 
   return (
     <div className="max-w-7xl mx-auto px-8 py-2">

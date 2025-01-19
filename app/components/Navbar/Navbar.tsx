@@ -1,12 +1,11 @@
 "use client";
 
 import "./Navbar.css";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const Navbar = () => {
-  const [isLargeScreen, setIsLargeScreen] = useState(false);
   const navbarLinks = useRef<HTMLDivElement>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Menyimpan status menu
 
@@ -21,27 +20,10 @@ const Navbar = () => {
     setIsMenuOpen(false); // Menonaktifkan toggle setelah menu item diklik
   };
 
-  const checkScreenSize = () => {
-    if (window.innerWidth > 1240) {
-      setIsLargeScreen(true);
-    } else {
-      setIsLargeScreen(false);
-    }
-  };
-
-  useEffect(() => {
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-
-    return () => {
-      window.removeEventListener("resize", checkScreenSize);
-    };
-  }, []);
-
   return (
     <nav className="bg-[#ffffff] fixed-navbar mx-auto">
       <div className="navbar-container">
-        <a href="/">
+        <Link href="/">
           <Image
             src="/logo-holywood.png"
             alt="logo"
@@ -49,7 +31,7 @@ const Navbar = () => {
             height={70}
             className="object-contain"
           />
-        </a>
+        </Link>
         <button onClick={handleNavbarButton} className="navbar-toggler">
           <span className="navbar-toggler-icon"></span>
         </button>

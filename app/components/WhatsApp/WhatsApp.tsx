@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import "./WhatsApp.css";
 import React from "react";
+import Image from "next/image";
 
 const WhatsApp = () => {
   const whatsAppNumber = "881027707533";
@@ -56,7 +57,7 @@ const WhatsApp = () => {
         <span className="absolute left-[7px] top-[7px] -z-50 size-10">
           <span className="flex size-full items-center justify-center animate-ping rounded-full bg-green-500 opacity-75"></span>
         </span>
-        <img
+        <Image
           src="/whatsapp.png"
           alt="WhatsApp"
           width={40}

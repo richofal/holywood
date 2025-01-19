@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 function Hero() {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -45,13 +46,15 @@ function Hero() {
               : "mb-4"
           }`}
         >
-          <img
+          <Image
             alt="Holywood logo"
             className={`${isLargeScreen ? "mx-0 block" : "mx-auto"} ${
               isLargeScreen ? "" : "hidden"
             }`}
             style={{ width: "100px" }}
-            src="./logo-holywood.png"
+            src="/logo-holywood.png"
+            width={100}
+            height={100}
           />
         </div>
         <h1
